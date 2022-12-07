@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap');
 *,
 ::after,
 ::before {
@@ -6,7 +6,7 @@
 }
 
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap');
+
 
 html {
   font-size: 100%;

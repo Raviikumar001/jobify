@@ -1,4 +1,8 @@
 import { useState } from 'react'
+import Landing from './pages/Landing'
+import styled from 'styled-components'
+import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
+
 
 
 
@@ -7,7 +11,8 @@ function App() {
 
   return (
     <div className="App">
-        <h2>Jobify</h2>
+       
+        <Landing /> 
       </div>
       )
 }
