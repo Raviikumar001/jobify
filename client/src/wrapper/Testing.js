@@ -17,14 +17,7 @@ nav{
   margin-top: -3rem;
 }
 
-h1{
-  font-weight: 700;
-  span{
-    color: var(--primary-500);
-
-  }
-}
-p{
+h1{not-found.svg
   color: var(--gray-600);
 }
 .main-img{

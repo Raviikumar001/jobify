@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 import main from '../assets/images/main.svg'
 import Wrapper from '../wrapper/Testing'
 import {Logo} from '../components/Index'
@@ -20,7 +20,7 @@ const Landing = () => {
           </h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis blanditiis soluta omnis voluptatem hic rerum. Sed!</p>
           <button className='btn btn-hero'>
-            Login/Register
+          <Link to="/"> Login/Register</Link>
 
           </button>
         </div>
