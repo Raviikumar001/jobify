@@ -62,8 +62,9 @@ const Register = () => {
           Submit
         </button>
         <p>
+          {values.isMember ? 'Not a memeber yet' : "Already a member?"}
           <button type="submit" className="member-btn" onClick={toggleMember}>
-            Register
+            {values.isMember? 'Register' : 'Login'};
           </button>
         </p>
       </form>
