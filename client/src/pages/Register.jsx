@@ -9,7 +9,7 @@ const initialState = {
   name: "",
   email: "",
   password: "",
-  isMember: false,
+  isMember: true,
   
 };
 
@@ -17,7 +17,7 @@ const Register = () => {
   const [values, setValues] = useState(initialState);
   //global State
 
-     const {isLoading, showAlert} =useAppContext();
+     const {isLoading, showAlert, displayAlert} =useAppContext();
   
 
 
@@ -26,12 +26,19 @@ const Register = () => {
   };
 
   const handleChange = (e) => {
-    console.log(e.target);
+    setValues({...values, [e.target.name]: e.target.value}); 
   };
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target);
+    const {name, email, password, isMember}= values;
+
+    if(!email || !password || (!isMember && !name))
+    {
+      displayAlert()
+      return
+    }
+    console.log(values)
   };
   return (
     <Wrapper className="full-page">
@@ -69,7 +76,7 @@ const Register = () => {
         </button>
         <p>
           {values.isMember ? 'Not a memeber yet' : "Already a member?"}
-          <button type="submit" className="member-btn" onClick={toggleMember}>
+          <button type="button" className="member-btn" onClick={toggleMember}>
             {values.isMember? 'Register' : 'Login'};  
           </button>
         </p>
