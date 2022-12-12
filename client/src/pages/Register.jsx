@@ -72,7 +72,7 @@ const Register = () => {
         />
 
         <button type="submit" className="btn btn-block">
-          Submit
+          Submit  
         </button>
         <p>
           {values.isMember ? 'Not a memeber yet' : "Already a member?"}
