@@ -1,7 +1,7 @@
 
 
 const register = async (req,res)=>{
-
+    console.log('hi')
     res.send('register user');
 }
 

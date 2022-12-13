@@ -8,7 +8,7 @@ const getAllJobs = async(req,res)=>{
     res.send('get all jobs');
 }
 
-const updateJobs = async(req,res)=>{
+const updateJob = async(req,res)=>{
     res.send('update job');
 }
 
@@ -21,4 +21,4 @@ const showStats = async(req,res)=>{
 }
 
 
-export {createJob, deleteJob, updateJobs, showStats,getAllJobs};
+export {createJob, deleteJob, updateJob, showStats,getAllJobs};
