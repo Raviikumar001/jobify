@@ -6,6 +6,8 @@ import connectDB from "./db/connect.js";
 
 //routers
 
+
+
  import authRouter from "./routes/authRoutes.js";
  import jobsRouter from './routes/jobsRoutes.js';
 //middlewares
