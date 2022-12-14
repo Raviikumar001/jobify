@@ -1,8 +1,12 @@
-
+import User  from "../models/user.js";
 
 const register = async (req,res)=>{
-    console.log('hi')
-    res.send('register user');
+    try {
+        const user = await User.create(req.body);
+        res.status(201).json({user});
+    }catch(error){
+        res.status(500).json({ msg: 'There was and error'});
+    }
 }
 
 const login = async (req,res) => {  
