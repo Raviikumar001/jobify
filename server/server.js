@@ -3,7 +3,7 @@ import express from "express";
 //db and authenticate user
 
 import connectDB from "./db/connect.js";
-
+import 'express-async-errors';
 //routers
 
 
