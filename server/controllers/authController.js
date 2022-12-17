@@ -1,6 +1,7 @@
 import User  from "../models/user.js";
 import { StatusCodes } from "http-status-codes";
 import {BadRequestError} from '../errors/Index.js'
+import user from "../models/user.js";
 
 
 
@@ -31,7 +32,8 @@ const login = async (req,res) => {
 
 
  const updateUser  = async (req, res)=>{
-    res.send('updateUser user')
- }
+    res.send('updateUser')
+    
+}
 
  export {register, login, updateUser};
