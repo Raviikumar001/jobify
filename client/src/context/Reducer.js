@@ -6,8 +6,12 @@ import {
   LOGIN_USER_ERROR,
   LOGIN_USER_SUCCESS,
   DISPLAY_ALERT,
+  TOGGLE_SIDEBAR,
   CLEAR_ALERT,
+  LOGOUT_USER
 } from "./Action";
+
+import { initialState } from "./appContext";
 
 const reducer = (state, action) => {
   if (action.type === DISPLAY_ALERT) {
@@ -87,6 +91,24 @@ const reducer = (state, action) => {
       showAlert:true,
       alertType: 'danger',
       alertText: action.payload.msg,
+    };
+  }
+
+  if (action.type == TOGGLE_SIDEBAR) {
+    return {
+      ...state,
+      showSidebar: !state.showSidebar,
+    };
+  }
+
+  if (action.type == LOGOUT_USER) {
+    return {
+      ...initialState,
+      user: null,
+      token:null,
+      jobLocation: '',
+      userLocation: '',
+      
     };
   }
 
