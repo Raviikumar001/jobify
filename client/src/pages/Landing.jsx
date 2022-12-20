@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import main from '../assets/images/main.svg'
 import Wrapper from '../wrapper/Testing'
-import {Logo} from '../components/Index'
+import {Logo} from '../components'
 
 const Landing = () => {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Logo, FormRow, Alert } from "../components/Index";
+import { Logo, FormRow, Alert } from "../components";
 import { useAppContext } from "../context/appContext";
 import Wrapper from "../wrapper/RegisterPage";
 
