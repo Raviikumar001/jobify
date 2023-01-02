@@ -20,7 +20,7 @@ const Landing = () => {
           </h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis blanditiis soluta omnis voluptatem hic rerum. Sed!</p>
           <button className='btn btn-hero'>
-          <Link to="/"> Login/Register</Link>
+          <Link to="/register"> Login/Register</Link>
 
           </button>
         </div>
