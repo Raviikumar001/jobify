@@ -15,17 +15,13 @@ const Smallsidebar = () => {
         }
       >
         <div className="content">
-          <button
-            type="button"
-            className="close-btn"
-            onClick={toggleSidebar}
-          >
+          <button type="button" className="close-btn" onClick={toggleSidebar}>
             <FaTimes />
           </button>
           <header>
             <Logo />
           </header>
-          <Navlinks toggleSidebar={toggleSidebar}/>         
+          <Navlinks toggleSidebar={toggleSidebar} />
         </div>
       </div>
     </Wrapper>
