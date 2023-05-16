@@ -11,6 +11,8 @@ import {
   AllJobs,
 } from "./pages/dashboard";
 
+
+//routes wrapped in router from react router
 function App() {
   const [count, setCount] = useState(0);
 
