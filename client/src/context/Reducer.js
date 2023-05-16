@@ -13,6 +13,8 @@ import {
 
 import { initialState } from "./appContext";
 
+
+//reducers
 const reducer = (state, action) => {
   if (action.type === DISPLAY_ALERT) {
     return {
